@@ -57,3 +57,54 @@ module compare (
     end 
   
 endmodule
+
+/*
+Simulation code for comparator module
+
+module test1(
+
+    );
+  // parameter 
+  parameter DATAWIDTH = 32;
+  // input port 
+  reg clk;
+  reg rst;
+  reg tx;
+  reg [DATAWIDTH-1:0] data1;
+  reg [DATAWIDTH-1:0] data2;
+  // output port 
+  wire  [DATAWIDTH-1:0] data;
+  wire  data_same;
+  
+    compare uut (
+       clk,
+       rst,
+       tx,
+       data1,
+       data2,
+       data,
+       data_same
+       );
+       
+  initial
+    begin
+      clk =0;
+      rst =1;
+      tx =0;
+      data1 = 32'd1;
+      data2 = 32'd2;
+      #10 
+      rst =0;
+      #100 
+      data2= 32'd1;
+      tx=1;
+    end 
+  always 
+    begin
+      #5 clk = ! clk;
+    end 
+
+endmodule
+
+
+*/
