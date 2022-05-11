@@ -1,3 +1,9 @@
+/*
+  Author : Rakotojaona Nambinina
+  email : Andrianoelisoa.Rakotojaona@gmail.com
+  Description : Comparator code that compare two signal data1 and data2 when tx signal is 1
+*/
+
 module compare (
        clk,
        rst,
