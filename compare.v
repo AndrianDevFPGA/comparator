@@ -1,4 +1,4 @@
-module (
+module compare (
        clk,
        rst,
        tx,
